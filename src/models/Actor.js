@@ -20,7 +20,6 @@ const Actor = sequelize.define('actor', {
     },
     birthday: {
         type: DataTypes.DATEONLY,
-        allowNull: false
     },
 });
 
