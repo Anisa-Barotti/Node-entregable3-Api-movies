@@ -18,7 +18,7 @@ const Director = sequelize.define('director', {
         type: DataTypes.TEXT,
         allowNull: false
     },
-    birtdhay: {
+    birtdhday: {
         type: DataTypes.DATEONLY,
         allowNull: false
     },

@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/connection');
 
 const Movie = sequelize.define('movie', {
-    Name: {
+    name: {
         type: DataTypes.STRING,
         allowNull: false
     },
@@ -10,11 +10,11 @@ const Movie = sequelize.define('movie', {
         type: DataTypes.TEXT,
         allowNull: false
     },
-    sinopsis: {
+    synopsis: {
         type: DataTypes.TEXT,
         allowNull: false
     },
-    releaseYears: {
+    releaseYear: {
         type: DataTypes.INTEGER,
         allowNull: false
     },
