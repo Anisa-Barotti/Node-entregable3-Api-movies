@@ -47,7 +47,7 @@ test(' POST /movies/:id/directors should set the movies directors', async() => {
         birthday:"1968-12-26",
     })
     const res = await request(app)
-        .post(`movies/${moviesId}/directors`)
+        .post(`/movies/${moviesId}/directors`)
         .send([director.id])
     await director.destroy();
     expect (res.status).toBe(200);
